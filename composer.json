@@ -1,0 +1,21 @@
+{
+	"name": "sellastica/twig",
+	"homepage": "https://github.com/sellastica/twig",
+	"license": "proprietary",
+	"authors": [
+		{
+			"name": "Tomáš Krejčí",
+			"homepage": "http://www.sellastica.com"
+		}
+	],
+	"require": {
+		"php": ">=7.1"
+	},
+	"require-dev": {
+	},
+	"autoload": {
+		"psr-4": {
+			"Sellastica\\Twig\\": "src/"
+		}
+	}
+}
