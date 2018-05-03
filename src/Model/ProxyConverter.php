@@ -1,7 +1,7 @@
 <?php
 namespace Sellastica\Twig\Model;
 
-use Sellastica\Core\Collection;
+use Sellastica\Core\Model\Collection;
 use Sellastica\Entity\Entity\EntityCollection;
 use Sellastica\Entity\Entity\IEntity;
 use Sellastica\Localization\Model\Localization;
@@ -79,7 +79,7 @@ class ProxyConverter
 	}
 
 	/**
-	 * @param \Sellastica\Core\Collection $collection
+	 * @param \Sellastica\Core\Model\Collection $collection
 	 * @param string $name
 	 * @return ArrayProxy
 	 */

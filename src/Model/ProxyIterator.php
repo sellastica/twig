@@ -138,23 +138,23 @@ class ProxyIterator extends TwigObject implements \Iterator
 	/**
 	 * @return string
 	 */
-	public function __toString()
+	public function __toString(): string
 	{
-		return '';
+		return $this->getShortName();
 	}
 
 	/**
 	 * @return string
 	 */
-	public function getShortName()
+	public function getShortName(): string
 	{
-		return '';
+		return '[array]';
 	}
 
 	/**
 	 * @return array
 	 */
-	public function getAllowedProperties()
+	public function getAllowedProperties(): array
 	{
 		return [
 			'sorter',
