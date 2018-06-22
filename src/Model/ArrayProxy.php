@@ -12,8 +12,6 @@ class ArrayProxy extends TwigObject implements \Iterator, \Countable, \ArrayAcce
 	protected $counter = 0;
 	/** @var array */
 	protected $items;
-	/** @var array */
-	protected $keys;
 
 
 	/**
@@ -154,11 +152,7 @@ class ArrayProxy extends TwigObject implements \Iterator, \Countable, \ArrayAcce
 	 */
 	private function getKeys()
 	{
-		if (null === $this->keys) {
-			$this->keys = array_keys($this->items);
-		}
-
-		return $this->keys;
+		return array_keys($this->items);
 	}
 
 	/**
